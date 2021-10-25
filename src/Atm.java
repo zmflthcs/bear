@@ -51,6 +51,7 @@ public class Atm {
             return false;
         }else if(amount<=0){
             System.out.println("Amount should be bigger than 0");
+            return false;
         } else{
             account.deposit(amount);
             this.cashbin.deposit(amount);
